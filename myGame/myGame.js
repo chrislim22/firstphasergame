@@ -44,6 +44,8 @@ game_state.main.prototype = {
         ledge.body.immovable = true;
         var ledge = this.platforms.create(400, 120, 'ground');
         ledge.body.immovable = true;
+        var ledge = this.platforms.create(200, 400, 'ground');
+        ledge.body.immovable = true;
 
         // We're going to be using physics, so enable the Arcade Physics system
         game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -60,8 +62,8 @@ game_state.main.prototype = {
         this.player.body.collideWorldBounds = true;
 
         // Our two animations, walking left and right.
-        this.player.animations.add('left', [1, 2, 3, 2], true);
-        this.player.animations.add('right', [7], true);
+        this.player.animations.add('left', [1, 2], true);
+        this.player.animations.add('right', [3, 4, 3], true);
 
         // Finally some this.stars to collect
         this.stars = game.add.group();
