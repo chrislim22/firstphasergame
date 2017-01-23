@@ -161,4 +161,3 @@ game_state.main.prototype = {
 };
 
 game.state.add('main', game_state.main);
-game.state.start('main');
