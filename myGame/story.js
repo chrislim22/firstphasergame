@@ -11,7 +11,7 @@ game_state.story.prototype = {
     create: function(){
     
     
-    this.scoreText = game.add.text(16, 16, 'hi \n asdf', {
+    this.scoreText = game.add.text(16, 16, 'Oh no!! \n Im all out of money and I need to buy stuff! \n Help me collect all these diamonds pls???', {
             fontSize: '32px',
             fill: '#ffffff'
         });
